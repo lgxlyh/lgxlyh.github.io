@@ -130,6 +130,25 @@
     </entry>
     
     <entry>
+      <title>Linux Gnome触摸板失效恢复</title>
+      <link href="/2018/06/14/Linux-mouse/"/>
+      <url>/2018/06/14/Linux-mouse/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>家用笔记本试用Proxmox后偶尔出现触摸板失效</p></blockquote><p><strong>转载</strong>:没有完美解决我的问题,可能硬件老旧造成</p><hr><p>以下方法解决Linux触摸板鼠标失灵</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#sudo modprobe -r psmouse</span></span><br><span class="line"><span class="comment">#sudo modprobe psmouse proto=imps</span></span><br><span class="line"><span class="comment">#sudo echo "options psmouse proto=imps" &gt; /etc/modprobe.d/options</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Gnome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Mysql time_zone 时区调整</title>
       <link href="/2018/05/30/mysqltimezone/"/>
       <url>/2018/05/30/mysqltimezone/</url>

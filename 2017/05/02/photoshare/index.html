@@ -520,7 +520,7 @@
           
   <div class="comments" id="comments">
     
-      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTE5OS8xNzc0Nw=="></div>
+      <div id="gitalk-container"></div>
     
   </div>
 
@@ -626,7 +626,7 @@
         <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -777,21 +777,26 @@
 
 
   
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
 
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '9a1a98e26370f87b2531',
+          clientSecret: '91dbf5215a587211330b63983afa7d87aaa722e2',
+          repo: 'blogTalk',
+          owner: 'lgxnas',
+          admin: ['lgxnas'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
